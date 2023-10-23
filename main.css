@@ -1,0 +1,100 @@
+.header {
+    background-color: rgb(14, 53, 69);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+    color: white;
+    letter-spacing: 2px;
+}
+.search-bar {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
+    background-color: darkcyan;
+}
+
+.search-bar label { 
+    font-size: 22px;
+    margin-right: 20px; 
+    color: white; 
+    letter-spacing: 5px;
+}
+
+.search-bar input {
+    width: 300px;
+    padding: 10px ;
+    border: 1px solid black;
+    border-radius: 5px;
+    
+}
+
+.search-bar button {
+    background-color: #0a2c38c1;
+    color: white;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 10px;
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+
+.content{
+    width:100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap:20px;
+    justify-content: center;
+    background-color: darkcyan;
+}
+
+.movie-card {
+    background-color: #445460;
+    color:white;
+ 
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+   
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    justify-content: space-between; /* 추가: 컨텐츠 간 간격을 균일하게 배치 */
+    height: 100%; /* 추가: 영화 카드의 높이를 100%로 설정하여 각 카드의 크기 동일하게 */
+}
+
+.movie-poster {
+    max-width: 100%;
+    height: 250px;
+    object-fit: contain;
+    margin-bottom: 20px;
+    padding: 0 20px;
+   
+    
+}
+
+.movie-title {
+    margin: 30px 0; /* 영화 제목과 영화 줄거리 첫 줄 간격을 30px로 설정 */
+}
+
+.movie-overview {
+    flex-grow: 1;
+    margin:30;
+    display:block;
+}
+
+.movie-rating {
+    
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#home{
+    font-size: 50px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }

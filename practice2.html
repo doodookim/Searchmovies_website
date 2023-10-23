@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .obj {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="obj">
+        hi
+    </div>
+    <script>
+
+        const obj = {
+            adult
+                :
+                false,
+            backdrop_path
+                :
+                "/tmU7GeKVybMWFButWEGl2M4GeiP.jpg",
+            genre_ids
+                :
+                [18, 80],
+            id
+                :
+                238,
+            original_language
+                :
+                "en",
+            original_title
+                :
+                "The Godfather",
+            overview
+                :
+                "Spanning the years 1945 to 1955, a chronicle of the fictional Italian-American Corleone crime family. When organized crime family patriarch, Vito Corleone barely survives an attempt on his life, his youngest son, Michael steps in to take care of the would-be killers, launching a campaign of bloody revenge.",
+            popularity
+                :
+                118.372,
+            poster_path
+                :
+                "/3bhkrj58Vtu7enYsRolD1fZdja1.jpg",
+            release_date
+                :
+                "1972-03-14",
+            title
+                :
+                "The Godfather",
+            video
+                :
+                false,
+            vote_average
+                :
+                8.7,
+            vote_count
+                :
+                18779,
+        }  //id, title, 평점, 줄거리 
+
+        console.log(obj.id);
+        console.log(obj.title);
+        console.log(obj.vote_average);
+        console.log(obj.overview);
+
+        const div = document.querySelector('.obj')
+        const template =
+            `
+            <div id="">
+        <p class="title">${obj.title}</p>
+        <p class="overview">${obj.overview}</p>
+        <span class="rate">${obj.vote_average}</span>
+    </div>
+        `
+        console.log(div)
+        div.innerHTML = template;
+
+        setTimeout(function () {
+            console.log('hello');
+        }, 1000);
+    </script>
+</body>
+
+</html>

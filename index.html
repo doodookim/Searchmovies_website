@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나의 영화창고</title>
+    <link href="main.css" type="text/css" rel="stylesheet">
+    <script src="movie.js" defer></script>
+</head>
+
+
+<body>
+
+    <header class="header">
+        <button id="home" style="color:azure">한번쯤은 꼭 봐야하는 명작 영화 20선</button>
+    </header>
+    <div class="search-bar">
+        <label for="search-input"></label>
+        <input type="text" id="search-input" placeholder="제목을 검색해보세요" autocomplete="off">
+        <button type="button" id="search-button">검색</button>
+    </div>
+    <div class="content">
+
+    </div>
+    <!-- <script>
+        // 검색 버튼 클릭 이벤트 처리
+        const searchButton = document.getElementById('search-button');
+        searchButton.addEventListener('click', () => {
+            const searchInput = document.getElementById('search-input').value.toLowerCase();
+            const filteredMovies = movies.filter(movie => movie.title.toLowerCase().includes(searchInput));
+            displayMovies(filteredMovies);
+        });
+    </script> -->
+
+
+</body>
+
+</html>
